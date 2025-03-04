@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div class="login">
+        <form action="welcome.html" method="get" class="form">
+            <h2>Login</h2>
+            <label>Username:</label><br><br>
+            <input type="text" id="name" minlength="8" maxlength="20"pattern="[A-Za-z]{8,20}" placeholder="Type  your username" required><br><br>
+            <label>Password:</label><br><br>
+            <input type="password"  id="pswd" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" placeholder="Type  your password" required>
+            <h5>Forgot Password?</h5>
+           <button class="btlogin" type="submit">Login</button><br><br><br>
+            <h4 class="signup">Not a Member?&nbsp;<span><a href="Signup.html">Signup now</a></span></h4>
+        </form>
+    </div>
+</body>
+</html>
